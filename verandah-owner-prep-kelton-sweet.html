@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Getting Your Property Market-Ready | Verandah Properties</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f5f3ef;
+    font-family: 'DM Sans', sans-serif;
+    color: #2c2c2c;
+    line-height: 1.75;
+  }
+
+  .email-wrapper {
+    max-width: 680px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-top: 5px solid #008C82;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+  }
+
+  .header {
+    background: #008C82;
+    padding: 36px 48px 28px;
+  }
+  .header-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+  }
+  .header-tagline {
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.72);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+  .gold-rule {
+    height: 2px;
+    background: #D4AF50;
+    width: 48px;
+    margin-top: 16px;
+  }
+
+  .body-content { padding: 44px 48px; }
+
+  .salutation {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #008C82;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    color: #3a3a3a;
+    margin-bottom: 18px;
+    font-weight: 300;
+  }
+  p strong { font-weight: 600; color: #2c2c2c; }
+
+  .section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #008C82;
+    margin: 36px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e8e4dc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-label .icon {
+    width: 26px;
+    height: 26px;
+    background: #D4AF50;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+
+  .checklist { list-style: none; margin: 0 0 8px 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 14px;
+    margin-bottom: 4px;
+    background: #fafaf8;
+    border-left: 3px solid transparent;
+    font-size: 14px;
+    color: #3a3a3a;
+    font-weight: 300;
+    border-radius: 0 4px 4px 0;
+  }
+  .check-box {
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid #008C82;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    background: #fff;
+  }
+  .checklist li .item-label { flex: 1; }
+  .checklist li .item-label strong {
+    display: block;
+    font-weight: 500;
+    color: #2c2c2c;
+    font-size: 14px;
+  }
+  .checklist li .item-label span {
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
+  }
+
+  .cta-box {
+    background: linear-gradient(135deg, #008C82 0%, #006e66 100%);
+    padding: 30px 36px;
+    margin: 36px 0 28px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-box::before {
+    content: '';
+    position: absolute;
+    top: -20px; right: -20px;
+    width: 120px; height: 120px;
+    background: rgba(212, 175, 80, 0.12);
+    border-radius: 50%;
+  }
+  .cta-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .cta-box p {
+    color: rgba(255,255,255,0.88);
+    font-size: 14px;
+    margin-bottom: 18px;
+    font-weight: 300;
+  }
+  .cta-button {
+    display: inline-block;
+    background: #D4AF50;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 12px 26px;
+    border-radius: 2px;
+    text-decoration: none;
+  }
+
+  .signature {
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid #e8e4dc;
+  }
+  .sig-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: #2c2c2c;
+    font-weight: 600;
+  }
+  .sig-title {
+    font-size: 12px;
+    color: #008C82;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-top: 3px;
+  }
+  .sig-contact {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  .sig-contact a { color: #008C82; text-decoration: none; }
+
+  .subject-line-hint {
+    background: #fff8e7;
+    border: 1px dashed #D4AF50;
+    padding: 12px 18px;
+    font-size: 12px;
+    color: #7a6a30;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .subject-line-hint strong { color: #5a4d1e; font-weight: 600; }
+
+  .footer {
+    background: #2c2c2c;
+    padding: 20px 48px;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 11px;
+    color: #888;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+  .footer a { color: #D4AF50; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="email-wrapper">
+
+  <div class="subject-line-hint">
+    <strong>Suggested Subject:</strong> &nbsp;Kelton — A Practical Roadmap for Getting Your Property Rental-Ready
+  </div>
+
+  <div class="header">
+    <div class="header-brand">Verandah Properties</div>
+    <div class="header-tagline">White-Glove Property Management · Lake Nona & Greater Orlando</div>
+    <div class="gold-rule"></div>
+  </div>
+
+  <div class="body-content">
+
+    <div class="salutation">Hi Kelton,</div>
+
+    <p>I know you're still working through the decision of what makes the most sense for your property, and I completely respect that. There's no rush from our end — this is a long-term relationship, and I want it to start on solid ground.</p>
+
+    <p>In the meantime, I thought it would be genuinely useful to send you something practical: a real-world walk-through of what getting a property rental-ready actually looks like, from the outside in. <strong>Whether you move forward with us or not, this is a roadmap worth having.</strong></p>
+
+    <p>Understanding what today's rental market expects — and what our team looks for before we list — will help you make a much more informed decision about timing, investment, and expectations. Let's walk through it together.</p>
+
+    <div class="section-label"><span class="icon">🌿</span> Exterior First Impressions</div>
+    <p style="font-size:13px; color:#666; margin-bottom:12px; font-weight:300;">Curb appeal sets the emotional tone before a tenant ever steps inside. These are the non-negotiables.</p>
+    <ul class="checklist">
+      <li><span class="check-box"></span><span class="item-label"><strong>Lawn & Landscaping</strong><span>Mowed, edged, trimmed — beds should be clean and mulched. Overgrowth signals neglect immediately.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Driveway & Walkways</strong><span>Pressure wash any oil stains, mildew, or buildup. Cracks should be addressed if significant.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Front Door & Entry</strong><span>Paint or clean the front door. Replace or polish hardware. Add a simple, clean welcome mat.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Exterior Paint / Siding</strong><span>Look for peeling, fading, or mildew streaks. A pressure wash often resolves this without repainting.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Gutters & Roof Visibility</strong><span>Clear any visible debris. Tenants and inspectors notice sagging gutters and deferred roof maintenance.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Lighting</strong><span>Replace burned-out bulbs at entry, garage, and pathway lighting. Warm light photographs beautifully.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Garage Door</strong><span>Test operation, clean panels, replace weatherstripping if worn. A surprisingly high-impact item.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Fence & Gates</strong><span>Secure latches, repaint if faded, clear any vines or damage. Especially important for pet-friendly positioning.</span></span></li>
+    </ul>
+
+    <div class="section-label"><span class="icon">🔧</span> Interior Systems — Safety & Function First</div>
+    <p style="font-size:13px; color:#666; margin-bottom:12px; font-weight:300;">Before aesthetics, everything must work. These are what our team verifies at move-in — and what tenants notice within the first 48 hours.</p>
+    <ul class="checklist">
+      <li><span class="check-box"></span><span class="item-label"><strong>HVAC</strong><span>Replace filters, schedule a service if not done in the last 12 months, confirm thermostat functions correctly.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Plumbing</strong><span>Check under all sinks, look for drips, test water pressure, ensure all drains flow freely.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Electrical</strong><span>Test all outlets and switches. Ensure GFCI outlets are present in bathrooms and kitchen.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Smoke & CO Detectors</strong><span>Replace batteries or units as needed. Florida law requires functioning detectors — non-negotiable.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Water Heater</strong><span>Note the age and look for rust or sediment. Units over 10 years should be discussed before listing.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Appliances</strong><span>Test each one. Confirm all included appliances work — dishwasher, range, refrigerator, microwave, washer/dryer if applicable.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Doors & Locks</strong><span>All exterior doors must lock securely. Interior doors should latch and close properly. Keys accounted for.</span></span></li>
+    </ul>
+
+    <div class="section-label"><span class="icon">✨</span> Interior Presentation — What Tenants Fall For</div>
+    <p style="font-size:13px; color:#666; margin-bottom:12px; font-weight:300;">Clean, fresh, and neutral. You don't need to renovate — you need to present. These items move the needle most.</p>
+    <ul class="checklist">
+      <li><span class="check-box"></span><span class="item-label"><strong>Deep Clean</strong><span>Professional cleaning throughout — inside cabinets, appliances, baseboards, ceiling fans. Your most important dollar spent.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Walls & Paint</strong><span>Patch nail holes, touch up scuffs. If walls are heavily marked or dated, neutral paint is one of the highest-return moves.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Flooring</strong><span>Steam clean carpet. Refinish or clean hard floors. Address any trip hazards or lifting seams.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Kitchen</strong><span>Clean cabinet faces, replace broken hardware. Grout and caulk around sink should be fresh and bright.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Bathrooms</strong><span>Re-caulk tub/shower if discolored. Replace toilet seats if worn. Clean or replace shower curtain rods.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Lighting & Bulbs</strong><span>Replace all burned-out bulbs. Match color temperature throughout — warm white (2700K–3000K) photographs best.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Window Treatments</strong><span>Clean or replace blinds that are broken or badly bent. Curtains should be washed or removed.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Odors</strong><span>A silent deal-killer. Address pet, mildew, or smoke odor at the source — not with fragrance cover-up.</span></span></li>
+      <li><span class="check-box"></span><span class="item-label"><strong>Personal Items & Clutter</strong><span>All personal belongings and excess items must be fully removed before photos or showings.</span></span></li>
+    </ul>
+
+    <div class="cta-box">
+      <h3>Whenever You're Ready, Kelton — We're Here</h3>
+      <p>If it would be helpful to get a professional set of eyes on the property before you decide on next steps, just send us some current photos or a walkthrough video — inside and out. Our team will review everything and come back to you with a straightforward, prioritized list of what to focus on, plus access to our vendor network to make it easy and cost-effective.</p>
+      <p>No obligation, no pressure. Just good information to help you make the right decision at the right time.</p>
+      <a href="mailto:pamela@verandahproperties.com" class="cta-button">Send Us Your Photos or Video</a>
+    </div>
+
+    <p>I'm happy to answer any questions along the way — about the prep process, the market, what to expect from management, or anything else on your mind. The door is always open.</p>
+
+    <p>Talk soon,</p>
+
+    <div class="signature">
+      <div class="sig-name">Pamela Syvertson</div>
+      <div class="sig-title">Owner & Broker · Verandah Properties, LLC</div>
+      <div class="sig-contact">
+        📞 <a href="tel:4078550331">(407) 855-0331</a> &nbsp;·&nbsp;
+        🌐 <a href="https://verandahproperties.com">VerandahProperties.com</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Verandah Properties, LLC · Lake Nona & Greater Orlando · <a href="https://verandahproperties.com">VerandahProperties.com</a> · (407) 855-0331</p>
+    <p style="margin-top:6px;">White-glove property management, built on trust.</p>
+  </div>
+
+</div>
+</body>
+</html>
